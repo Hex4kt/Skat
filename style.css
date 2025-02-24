@@ -1,0 +1,24 @@
+:root {
+	/* color-scheme: light dark; */
+	--first-color: #155263;
+	--second-color: #ff6f3c;
+	--third-color: #ff9a3c;
+	--fourth-color: #ffc93c;
+}
+
+body {
+    color: var(--first-color);
+    background-color: var(--first-color);
+}
+
+h1 {
+    color: var(--second-color);
+}
+
+h2 {
+    color: var(--third-color);
+}
+
+h3 {
+    color: var(--fourth-color);
+}
