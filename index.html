@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skatrunde Ravensberg</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>
-        Skatrunde Ravensberg
-    </h1>
 
-    <hr>
-
-    <h2 class="rechteSeite">
-        aktuelle Rangliste:
-    </h2>
-
-    <hr>
+    <div class="grid-container">
     
-    <h3 class="linkeSeite">
-        Spieltag eintragen
-    </h3>
+        <div class="header">
+        <h1>
+            Skatrunde Ravensberg
+        </h1>
+        </div>
 
-    <button onclick="spieleintragMachen">neuen Spieleintrag machen</button>
+        <div class="rangliste">
+            <h2 class="">
+                aktuelle Rangliste
+            </h2>
+        </div>
+    
+        <div class="spieltag">
+            <h3 class="">
+                Spieltag eintragen
+            </h3>
+            <button onclick="spieleintragMachen()">neuen Spieleintrag machen</button>
+        </div>
+    
+    </div>
 
 </body>
 </html>

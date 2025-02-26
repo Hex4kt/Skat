@@ -1,0 +1,3 @@
+function spieleintragMachen() {
+    alert("Spieleintrag")
+}
