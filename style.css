@@ -25,9 +25,22 @@ h3 {
 }
 
 .header {
-    grid-area: header;
+    grid-area: headerLeft / span 3;
     border-bottom: 6px solid #ff6f3c;
     border-radius: 5px;
+}
+
+.spieleintrag {
+    grid-area: headerLeft / span 1;
+    border-bottom: 6px solid #ff6f3c;
+    border-radius: 5px;
+}
+
+.spieleintragAbbrechen {
+    grid-area: headerMiddle / span 1;
+    border-bottom: 6px solid #ff6f3c;
+    border-radius: 5px;
+    margin: auto;
 }
 
 .rangliste {
@@ -38,12 +51,20 @@ h3 {
     grid-area: rightSide;
 }
 
+.spieler {
+    grid-area: leftSide;
+}
+
+.punkte {
+    grid-area: middle;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 
-        'header header'
-        'leftSide rightSide'
-        'footer footer';
+        'headerLeft headerMiddle headerRight'
+        'leftSide middle rightSide'
+        'footer footer footer';
 }
 
 @media only screen and (max-width: 600px) {
