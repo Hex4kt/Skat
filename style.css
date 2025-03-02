@@ -31,16 +31,19 @@ h3, label {
 }
 
 .spieleintrag {
-    grid-area: headerLeft / span 1;
+    grid-area: headerLeft / span 3;
     border-bottom: 6px solid #ff6f3c;
     border-radius: 5px;
 }
 
 .spieleintragAbbrechen {
-    grid-area: headerMiddle / span 1;
-    border-bottom: 6px solid #ff6f3c;
-    border-radius: 5px;
-    margin: auto;
+    grid-area: footerLeft;
+    margin: 28px;
+}
+
+.spieleintragErstellen {
+    grid-area: footerMiddle;
+    margin: 28px;
 }
 
 .rangliste {
@@ -64,7 +67,7 @@ h3, label {
     grid-template-areas: 
         'headerLeft headerMiddle headerRight'
         'leftSide middle rightSide'
-        'footer footer footer';
+        'footerLeft footerMiddle footerRight';
 }
 
 @media only screen and (max-width: 600px) {
